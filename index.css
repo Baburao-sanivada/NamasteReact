@@ -1,9 +1,15 @@
-div{
-    padding: 0;
-    background-color: darkblue;
-    
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid;
 }
-p{
-    display: inline;
-    color: white;
+.nav-items > ul{
+    display: flex;
+    font-size: 20px;
+
+}
+.nav-items > ul >li{
+    padding: 10px;
+    margin: 10px;
 }
