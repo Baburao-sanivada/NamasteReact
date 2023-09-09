@@ -33,12 +33,42 @@ const Header=()=>{
         </div>
     )
 }
-
-
+const Card=()=>{
+    return (
+        <div class="res-card">
+            <img class="card-logo" alt="card-logo" src="https://b.zmtcdn.com/data/pictures/chains/4/94244/77aa082158f91099bc3738bd3623f77e.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"></img>
+            <h3>Chikoos Restaurant</h3>
+            <h4>Biriyani,Chinese</h4>
+            <h4>4.4 stars</h4>
+        </div>
+    )
+}
+const Body=()=>{
+    return (
+        <div className="res-container">
+            <div className="search"><input type="search" placeholder="Biriyani on your Mind"></input>Search</div>
+            <div className="card-container">
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+            </div>
+        </div>
+    )
+}
 const AppLayout=()=>{
     return (
         <div className="AppLayout">
             <Header></Header>
+            <Body></Body>
         </div>
     )
 }
