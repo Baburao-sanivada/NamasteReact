@@ -1,12 +1,19 @@
-import obj from "./obj";
+import { useState } from "react";
+import obj from "../utils/data";
 import Card from "./Card";
-const Body=()=>{
+export const Body=()=>{
+    const [resList,SetresList]=useState(obj);
     return (
         <div className="res-container">
-            <div className="search"><input type="search" placeholder="Biriyani on your Mind"></input>Search</div>
+            <div className="Filter">
+                <button className="filterButton" onClick={()=>{
+                    const updatedList=obj.filter((item)=> item.rating>4);
+                    SetresList(updatedList);
+                }}>Top Rated Restaurants</button>
+            </div>
             <div className="card-container">
             {
-                obj.map((item)=><Card data={item}></Card>)
+                resList.map((item)=><Card key={item.id} data={item}></Card>)
             }
             </div>
         </div>
