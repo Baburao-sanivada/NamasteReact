@@ -3,11 +3,11 @@ const Card=(props)=>{
     const {data}=props;
     return (
         <div className="res-card">
-            <img className="card-logo" alt="card-logo" src={CARD_URL}></img>
-            <h3>{data.name}</h3>
-            <h4>{data.location}</h4>
-            <h4>{data.rating} stars</h4>
-            <h4>{data.time} min</h4>
+            <img className="card-logo" alt="card-logo" src={CARD_URL+data.info.cloudinaryImageId}></img>
+            <h3>{data.info.name}</h3>
+            <h4>{data.info.locality}</h4>
+            <h4>{data.info.avgRating} stars</h4>
+            <h4>{data.info.costForTwotime}</h4>
         </div>
     )
 }
