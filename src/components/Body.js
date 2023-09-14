@@ -9,6 +9,7 @@ export const Body=()=>{
 
     useEffect(()=>{
         fetchData();
+        console.log("UseEffect Rendered");
     },[]);
 
     const fetchData=async () => {
@@ -17,11 +18,9 @@ export const Body=()=>{
         console.log(json.data.cards.slice(3,));
         SetresList(json.data.cards.slice(3,));
     }
-
-    if(resList.length===0){
-        return <Shimmer/>
-    }
-    return (
+    
+    //Conditional Rendering
+    return resList.length===0?<Shimmer></Shimmer>: (
         <div className="res-container">
             <div className="Search">
                 <input type="text" id="inputtext" placeholder="Select Restaurant"></input>
