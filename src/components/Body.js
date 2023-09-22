@@ -3,6 +3,7 @@ import obj from "../utils/data";
 import Card from "./Card";
 import { Shimmer } from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 export const Body=()=>{
@@ -20,7 +21,11 @@ export const Body=()=>{
         SetresList(json.data.cards.slice(3,));
         SetResList(json.data.cards.slice(3,));
     }
-  
+
+    const onlinestatus=useOnlineStatus();
+    if(onlinestatus===false){
+        return <h1>You're are Offline!!! Please Check Your Internet</h1>
+    }
     //Conditional Rendering
     return resList.length===0?<Shimmer></Shimmer>: (
         <div className="res-container">
