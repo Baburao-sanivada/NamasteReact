@@ -8,6 +8,8 @@ const UserCard=(props)=>{
         
         return ()=>{
             // clearInterval(timer);
+
+            
             console.log("Component Did Unmount");
         }
     },[count])
