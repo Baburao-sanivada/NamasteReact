@@ -5,11 +5,9 @@ const UserCard=(props)=>{
     const [count2]=useState(1);
     useEffect(()=>{
         console.log("UseEffect");
-        const timer=setInterval(()=>{
-            console.log("hello");
-        },1000);
+        
         return ()=>{
-            clearInterval(timer);
+            // clearInterval(timer);
             console.log("Component Did Unmount");
         }
     },[count])
