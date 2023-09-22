@@ -1,4 +1,5 @@
 import { CARD_URL } from "../utils/constants";
+
 const Card=(props)=>{
     const {data}=props;
     return (
