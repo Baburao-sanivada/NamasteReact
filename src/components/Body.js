@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import obj from "../utils/data";
 import Card from "./Card";
 import { Shimmer } from "./Shimmer";
+import { Link } from "react-router-dom";
 
 
 export const Body=()=>{
@@ -13,12 +14,13 @@ export const Body=()=>{
         fetchData();
     },[]);
     const fetchData=async () => {
-        const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.5071128&lng=78.35791119999999&collection=80441&tags=layout_CCS_Idli&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
+        const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.5047744&lng=78.3799564&collection=83649&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
         const json=await data.json();
+        // console.log(json);
         SetresList(json.data.cards.slice(3,));
         SetResList(json.data.cards.slice(3,));
     }
-    
+  
     //Conditional Rendering
     return resList.length===0?<Shimmer></Shimmer>: (
         <div className="res-container">
@@ -36,7 +38,9 @@ export const Body=()=>{
             </div>
             <div className="card-container">
             {
-                resList.map((item)=><Card key={item.card.card.info.id} data={item}></Card>)
+                resList.map((item)=>
+                <Link key={item.card.card.info.id} to={"/restaurant/"+item.card.card.info.id} ><Card data={item}></Card></Link>
+                )
             }
             </div>
         </div>
