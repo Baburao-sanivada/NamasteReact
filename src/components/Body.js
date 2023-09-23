@@ -29,11 +29,11 @@ export const Body=()=>{
     //Conditional Rendering
     return resList.length===0?<Shimmer></Shimmer>: (
         <div className="res-container">
-            <div className="Search">
-                <input type="text" id="inputtext" placeholder="Select Restaurant" value={InputVal} onChange={(e)=>{
+            <div className="Search my-4 p-4 pl-10">
+                <input  className="border border-solid border-black m-2" type="text" id="inputtext" placeholder="Select Restaurant" value={InputVal} onChange={(e)=>{
                     setInputValue(e.target.value);
                 }}></input>
-                <button className="filterButton" onClick={()=>{
+                <button className="px-4 bg-green-100 py-1 rounded-lg mx-4" onClick={()=>{
                     console.log(ResList);
                     const updatedList=ResList.filter((item)=>{
                         return item.card.card.info.name.toLowerCase().includes(InputVal.toLowerCase());
@@ -41,7 +41,7 @@ export const Body=()=>{
                     SetresList(updatedList);
                 }}>Search</button>
             </div>
-            <div className="card-container">
+            <div className="flex flex-wrap">
             {
                 resList.map((item)=>
                 <Link key={item.card.card.info.id} to={"/restaurant/"+item.card.card.info.id} ><Card data={item}></Card></Link>
