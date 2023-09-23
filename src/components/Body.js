@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import obj from "../utils/data";
-import Card from "./Card";
+import Card,{CardWithLabel} from "./Card";
 import { Shimmer } from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
@@ -17,11 +17,13 @@ export const Body=()=>{
     const fetchData=async () => {
         const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.5047744&lng=78.3799564&collection=83649&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
         const json=await data.json();
-        // console.log(json);
+        console.log(json);
         SetresList(json.data.cards.slice(3,));
         SetResList(json.data.cards.slice(3,));
     }
 
+    const WithPromotedLabel=CardWithLabel(Card);
+    
     const onlinestatus=useOnlineStatus();
     if(onlinestatus===false){
         return <h1>You're are Offline!!! Please Check Your Internet</h1>
@@ -44,7 +46,9 @@ export const Body=()=>{
             <div className="flex flex-wrap">
             {
                 resList.map((item)=>
-                <Link key={item.card.card.info.id} to={"/restaurant/"+item.card.card.info.id} ><Card data={item}></Card></Link>
+                <Link key={item.card.card.info.id} to={"/restaurant/"+item.card.card.info.id} >{
+                    item.card.card.info.promoted?<WithPromotedLabel data={item}></WithPromotedLabel>:<Card data={item}></Card>
+                }</Link>
                 )
             }
             </div>
