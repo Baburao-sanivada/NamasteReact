@@ -1,15 +1,16 @@
-import { useState,useEffect } from "react";
+import { useState,useEffect, useContext } from "react";
 import obj from "../utils/data";
 import Card,{CardWithLabel} from "./Card";
 import { Shimmer } from "./Shimmer";
 import { Link } from "react-router-dom";
+import { UserContext } from "../utils/UserContext";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 export const Body=()=>{
     const [ResList,SetResList]=useState([]);
     const [resList,SetresList]=useState([]);
-
+    const {user,setUserName}=useContext(UserContext);
     const [InputVal,setInputValue]=useState("");
     useEffect(()=>{
         fetchData();
@@ -31,7 +32,7 @@ export const Body=()=>{
     //Conditional Rendering
     return resList.length===0?<Shimmer></Shimmer>: (
         <div className="res-container">
-            <div className="Search my-4 p-4 pl-10">
+            <div className="Search my-4 p-4 pl-10 flex">
                 <input  className="border border-solid border-black m-2" type="text" id="inputtext" placeholder="Select Restaurant" value={InputVal} onChange={(e)=>{
                     setInputValue(e.target.value);
                 }}></input>
@@ -42,6 +43,13 @@ export const Body=()=>{
                     })
                     SetresList(updatedList);
                 }}>Search</button>
+
+                <div className="ml-4">
+                    <label>UserName : </label>
+                    <input className="border border-black" value={user} onChange={(e)=>{
+
+                    }}></input>
+                </div>
             </div>
             <div className="flex flex-wrap">
             {
