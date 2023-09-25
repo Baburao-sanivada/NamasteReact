@@ -1,12 +1,13 @@
 import { useState } from "react";
 import ItemList from "./ItemList";
 
-const RestaurantCategory=({data,showItems})=>{
+const RestaurantCategory=({data,showItems,setShowIndex})=>{
    
     const itemlength=data.itemCards?data.itemCards.length:null;
 
     const handleClick=()=>{
         // setShowItems(!showItems);
+        setShowIndex();
     }
     return <div>
         {/* Header */}

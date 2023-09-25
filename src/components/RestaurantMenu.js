@@ -10,6 +10,9 @@ const RestaurantMenu=()=>{
     
     const resdata=useRestaurantMenu(resId);
 
+    const [showInd,setShowInd]=useState(-1);
+
+
     if(resdata.length==0) return <Shimmer/>;
 
     const resName=resdata.cards[0].card.card.info.name;
@@ -21,7 +24,7 @@ const RestaurantMenu=()=>{
         return c?.card?.card?.["@type"].includes("ItemCategory")
         
     });
-    const [showItemInd,setshowItemsInd]=useState(0);
+    
 
     return (
         <div className="text-center">
@@ -30,7 +33,10 @@ const RestaurantMenu=()=>{
 
             {/* Building Accordion */}
             {
-                filteredData.map((category,index)=><RestaurantCategory key={category.card.card.title} data={category.card.card} showItems={showItemInd===index?true:false}/>)
+                filteredData.map((category,index)=>
+                <RestaurantCategory key={category.card.card.title} 
+                data={category.card.card} showItems={showInd===index?true:false} setShowIndex={()=> setShowInd(index)}/>
+                )
             }
 
         </div>
