@@ -3,14 +3,13 @@ import obj from "../utils/data";
 import Card,{CardWithLabel} from "./Card";
 import { Shimmer } from "./Shimmer";
 import { Link } from "react-router-dom";
-import { UserContext } from "../utils/UserContext";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { UserContext } from "../utils/UserContext";
 
 
 export const Body=()=>{
     const [ResList,SetResList]=useState([]);
     const [resList,SetresList]=useState([]);
-    const {user,setUserName}=useContext(UserContext);
     const [InputVal,setInputValue]=useState("");
     useEffect(()=>{
         fetchData();
@@ -18,11 +17,11 @@ export const Body=()=>{
     const fetchData=async () => {
         const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.5047744&lng=78.3799564&collection=83649&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
         const json=await data.json();
-        console.log(json);
+        // console.log(json);
         SetresList(json.data.cards.slice(3,));
         SetResList(json.data.cards.slice(3,));
     }
-
+    const {user,setUserName}=useContext(UserContext);
     const WithPromotedLabel=CardWithLabel(Card);
     
     const onlinestatus=useOnlineStatus();
@@ -47,7 +46,7 @@ export const Body=()=>{
                 <div className="ml-4">
                     <label>UserName : </label>
                     <input className="border border-black" value={user} onChange={(e)=>{
-
+                        setUserName(e.target.value);
                     }}></input>
                 </div>
             </div>
