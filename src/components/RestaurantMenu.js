@@ -1,9 +1,8 @@
-import {useEffect} from "react";
-import {useParams,useState} from "react-router-dom";
+import {useEffect,useState} from "react";
+import {useParams} from "react-router-dom";
 import { Shimmer } from "./Shimmer";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
-import { useState } from "react";
 
 const RestaurantMenu=()=>{
     const {resId}=useParams();
