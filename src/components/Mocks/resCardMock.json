@@ -1,0 +1,100 @@
+{
+    "card": {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+                "id": "46881",
+                "name": "Pista House Restaurant & Bakery",
+                "cloudinaryImageId": "bliz5g10zrm4xggg391v",
+                "locality": "Kukatpally",
+                "areaName": "Kukatpally",
+                "costForTwo": "₹500 for two",
+                "cuisines": [
+                    "Biryani",
+                    "North Indian",
+                    "Chinese",
+                    "Kebabs",
+                    "Mughlai",
+                    "Tandoor",
+                    "Desserts"
+                ],
+                "avgRating": 4,
+                "feeDetails": {
+                    "restaurantId": "46881",
+                    "fees": [
+                        {
+                            "name": "BASE_DISTANCE",
+                            "fee": 3000
+                        },
+                        {
+                            "name": "BASE_TIME"
+                        },
+                        {
+                            "name": "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    "totalFee": 3000
+                },
+                "parentId": "457788",
+                "avgRatingString": "4.0",
+                "totalRatingsString": "10K+",
+                "promoted": true,
+                "adTrackingId": "cid=8189290~p=2~eid=0000018a-d676-858d-4299-eb3a00ef0201~srvts=1695815206285~83649",
+                "sla": {
+                    "deliveryTime": 50,
+                    "lastMileTravel": 2.8,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "50 mins",
+                    "lastMileTravelString": "2.8 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2023-09-27 23:59:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "textBased": {},
+                        "imageBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "20% OFF",
+                    "subHeader": "UPTO ₹50"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {}
+            },
+            "analytics": {},
+            "cta": {
+                "link": "swiggy://menu?restaurant_id=46881&source=collection&query=Biryani",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+        },
+        "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+        }
+    }
+}

@@ -1,0 +1,784 @@
+{
+    "statusCode": 0,
+    "data": {
+        "statusMessage": "done successfully",
+        "cards": [
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+                        "collectionId": "83649",
+                        "title": "Biryani",
+                        "description": "Taste these delectable classics, delectable biryanis to make your day.",
+                        "imageId": "v1674029961/PC_Creative%20refresh/3D_bau/collections_new/Biriyani.png",
+                        "aspectRatio": "3.44",
+                        "cta": {
+                            "link": "swiggy://collectionV2?collection_id=83649&tags=layout_CCS_Biryani,layout_cuisine_biryani,ads_pc_biryani,biryani",
+                            "type": "collectionv2"
+                        },
+                        "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+                        "count": "6 restaurants"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+                        "sortConfigs": [
+                            {
+                                "key": "relevance",
+                                "title": "Relevance (Default)",
+                                "selected": true,
+                                "defaultSelection": true
+                            },
+                            {
+                                "key": "deliveryTimeAsc",
+                                "title": "Delivery Time"
+                            },
+                            {
+                                "key": "modelBasedRatingDesc",
+                                "title": "Rating"
+                            },
+                            {
+                                "key": "costForTwoAsc",
+                                "title": "Cost: Low to High"
+                            },
+                            {
+                                "key": "costForTwoDesc",
+                                "title": "Cost: High to Low"
+                            }
+                        ],
+                        "restaurantCount": 6,
+                        "facetList": [
+                            {
+                                "label": "Veg/Non-veg",
+                                "id": "isVeg",
+                                "selection": "SELECT_TYPE_SINGLESELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Pure veg",
+                                        "id": "isVegfacetquery2",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Non Veg",
+                                        "id": "isVegfacetquery3",
+                                        "analytics": {}
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_FLATTENED",
+                                "subLabel": "Filter by"
+                            },
+                            {
+                                "label": "Delivery Time",
+                                "id": "deliveryTime",
+                                "selection": "SELECT_TYPE_SINGLESELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Less than 30 mins",
+                                        "id": "deliveryTimefacetquery2",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Less than 45 mins",
+                                        "id": "deliveryTimefacetquery3",
+                                        "analytics": {}
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_FLATTENED",
+                                "subLabel": "Filter by"
+                            },
+                            {
+                                "label": "Cost for two",
+                                "id": "costForTwo",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Rs. 300-Rs. 600",
+                                        "id": "costForTwofacetquery3",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Less than Rs. 300",
+                                        "id": "costForTwofacetquery5",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filter by"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+                        "layout": {
+                            "rows": 1,
+                            "widgetPadding": {
+                                "left": 16,
+                                "top": 20,
+                                "right": 16,
+                                "bottom": 16
+                            },
+                            "scrollBar": {},
+                            "widgetTheme": {
+                                "defaultMode": {
+                                    "backgroundColour": "#FFFFFF",
+                                    "theme": "THEME_TYPE_LIGHT"
+                                },
+                                "darkMode": {
+                                    "backgroundColour": "#1B3028",
+                                    "theme": "THEME_TYPE_DARK"
+                                }
+                            }
+                        },
+                        "id": "restaurantCountWidget",
+                        "gridElements": {
+                            "infoWithStyle": {
+                                "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                                "text": "Restaurants to explore",
+                                "headerStyling": {
+                                    "textSize": 15,
+                                    "textColor": "text_color_highest_emphasis",
+                                    "textFontName": "FONT_NAME_HEADER_H5",
+                                    "maxLines": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "658898",
+                            "name": "Sandarshini Elite Pure Veg - Fine Dining Restaurant.",
+                            "cloudinaryImageId": "037736016162abb4d77a08a2f82d01f0",
+                            "locality": "Behind deepthi sr",
+                            "areaName": "Miyapur",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": [
+                                "Chinese",
+                                "South Indian",
+                                "North Indian",
+                                "Biryani",
+                                "Beverages",
+                                "Desserts"
+                            ],
+                            "avgRating": 4.1,
+                            "veg": true,
+                            "feeDetails": {
+                                "restaurantId": "658898",
+                                "fees": [
+                                    {
+                                        "name": "BASE_DISTANCE",
+                                        "fee": 5000
+                                    },
+                                    {
+                                        "name": "BASE_TIME"
+                                    },
+                                    {
+                                        "name": "ANCILLARY_SURGE_FEE"
+                                    }
+                                ],
+                                "totalFee": 5000
+                            },
+                            "parentId": "395920",
+                            "avgRatingString": "4.1",
+                            "totalRatingsString": "1K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=8346354~p=1~eid=0000018a-d9b3-ca7b-0f3f-722f001a017a~srvts=1695869553275~83649",
+                            "sla": {
+                                "deliveryTime": 28,
+                                "lastMileTravel": 5.6,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "28 mins",
+                                "lastMileTravelString": "5.6 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2023-09-28 11:00:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "imageBadges": [
+                                    {
+                                        "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                        "description": "pureveg"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "imageBased": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                                    "description": "pureveg"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "textExtendedBadges": {},
+                                    "textBased": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "50% OFF",
+                                "subHeader": "UPTO ₹100"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {}
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=658898&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "46881",
+                            "name": "Pista House Restaurant & Bakery",
+                            "cloudinaryImageId": "bliz5g10zrm4xggg391v",
+                            "locality": "Kukatpally",
+                            "areaName": "Kukatpally",
+                            "costForTwo": "₹500 for two",
+                            "cuisines": [
+                                "Biryani",
+                                "North Indian",
+                                "Chinese",
+                                "Kebabs",
+                                "Mughlai",
+                                "Tandoor",
+                                "Desserts"
+                            ],
+                            "avgRating": 4,
+                            "feeDetails": {
+                                "restaurantId": "46881",
+                                "fees": [
+                                    {
+                                        "name": "BASE_DISTANCE",
+                                        "fee": 3000
+                                    },
+                                    {
+                                        "name": "BASE_TIME"
+                                    },
+                                    {
+                                        "name": "ANCILLARY_SURGE_FEE"
+                                    }
+                                ],
+                                "totalFee": 3000
+                            },
+                            "parentId": "457788",
+                            "avgRatingString": "4.0",
+                            "totalRatingsString": "10K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=8189290~p=2~eid=0000018a-d9b3-ca7b-0f3f-7230001a0227~srvts=1695869553275~83649",
+                            "sla": {
+                                "deliveryTime": 19,
+                                "lastMileTravel": 2.8,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "19 mins",
+                                "lastMileTravelString": "2.8 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2023-09-28 23:59:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "textExtendedBadges": [
+                                    {
+                                        "iconId": "guiltfree/GF_Logo_android_3x",
+                                        "shortDescription": "options available",
+                                        "fontColor": "#7E808C"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {},
+                                    "textExtendedBadges": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                                    "description": "",
+                                                    "shortDescription": "options available",
+                                                    "fontColor": "#7E808C"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "₹75 OFF",
+                                "subHeader": "ABOVE ₹249",
+                                "discountTag": "FLAT DEAL"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {}
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=46881&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "3302",
+                            "name": "Hotel Sitara Grand - Dhanturi Group of hotels",
+                            "cloudinaryImageId": "fup8lrzrx0anyztp0frk",
+                            "locality": "Miyapur",
+                            "areaName": "Miyapur",
+                            "costForTwo": "₹300 for two",
+                            "cuisines": [
+                                "Biryani",
+                                "Chinese",
+                                "South Indian",
+                                "North Indian",
+                                "Tandoor"
+                            ],
+                            "avgRating": 3.8,
+                            "feeDetails": {
+                                "restaurantId": "3302",
+                                "fees": [
+                                    {
+                                        "name": "BASE_DISTANCE",
+                                        "fee": 3500
+                                    },
+                                    {
+                                        "name": "BASE_TIME"
+                                    },
+                                    {
+                                        "name": "ANCILLARY_SURGE_FEE"
+                                    }
+                                ],
+                                "totalFee": 3500
+                            },
+                            "parentId": "351561",
+                            "avgRatingString": "3.8",
+                            "totalRatingsString": "10K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=8125649~p=4~eid=0000018a-d9b3-ca7b-0f3f-7232001a0437~srvts=1695869553275~83649",
+                            "sla": {
+                                "deliveryTime": 27,
+                                "lastMileTravel": 3.9,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "27 mins",
+                                "lastMileTravelString": "3.9 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2023-09-28 10:30:00",
+                                "opened": true
+                            },
+                            "badges": {},
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {},
+                                    "textExtendedBadges": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "20% OFF",
+                                "subHeader": "UPTO ₹50"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {}
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=3302&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "6009",
+                            "name": "Pondy Parottas",
+                            "cloudinaryImageId": "d0b3add8af98a940ea3020452005ff4c",
+                            "locality": "Sanjeeva Reddy Nagar Road",
+                            "areaName": "Kukatpally",
+                            "costForTwo": "₹400 for two",
+                            "cuisines": [
+                                "South Indian",
+                                "Chinese",
+                                "Biryani",
+                                "Desserts"
+                            ],
+                            "avgRating": 3.8,
+                            "feeDetails": {
+                                "restaurantId": "6009",
+                                "fees": [
+                                    {
+                                        "name": "BASE_DISTANCE",
+                                        "fee": 4100
+                                    },
+                                    {
+                                        "name": "BASE_TIME"
+                                    },
+                                    {
+                                        "name": "ANCILLARY_SURGE_FEE"
+                                    }
+                                ],
+                                "totalFee": 4100
+                            },
+                            "parentId": "10821",
+                            "avgRatingString": "3.8",
+                            "totalRatingsString": "10K+",
+                            "promoted": true,
+                            "adTrackingId": "cid=8130970~p=5~eid=0000018a-d9b3-ca7b-0f3f-7233001a0560~srvts=1695869553275~83649",
+                            "sla": {
+                                "deliveryTime": 26,
+                                "lastMileTravel": 4,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "26 mins",
+                                "lastMileTravelString": "4.0 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2023-09-28 11:00:00",
+                                "opened": true
+                            },
+                            "badges": {},
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {},
+                                    "textExtendedBadges": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "₹75 OFF",
+                                "subHeader": "ABOVE ₹249",
+                                "discountTag": "FLAT DEAL"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {}
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=6009&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "28068",
+                            "name": "Kolkata House",
+                            "cloudinaryImageId": "d43bf7ff48f9a553f53add16b6373b5e",
+                            "areaName": "Kondapur",
+                            "costForTwo": "₹350 for two",
+                            "cuisines": [
+                                "Seafood",
+                                "North Indian",
+                                "Bengali",
+                                "Chinese"
+                            ],
+                            "avgRating": 4,
+                            "feeDetails": {
+                                "restaurantId": "28068",
+                                "fees": [
+                                    {
+                                        "name": "BASE_DISTANCE",
+                                        "fee": 5300
+                                    },
+                                    {
+                                        "name": "BASE_TIME"
+                                    },
+                                    {
+                                        "name": "ANCILLARY_SURGE_FEE"
+                                    }
+                                ],
+                                "totalFee": 5300
+                            },
+                            "parentId": "19169",
+                            "avgRatingString": "4.0",
+                            "totalRatingsString": "10K+",
+                            "sla": {
+                                "deliveryTime": 28,
+                                "lastMileTravel": 6.6,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "28 mins",
+                                "lastMileTravelString": "6.6 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2023-09-28 11:00:00",
+                                "opened": true
+                            },
+                            "badges": {},
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {},
+                                    "textExtendedBadges": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "40% OFF",
+                                "subHeader": "UPTO ₹80"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {}
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=28068&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "183710",
+                            "name": "Hotel S Grand",
+                            "cloudinaryImageId": "hvgzwzjptadckwwdq4sf",
+                            "locality": "Nizampet & Pragathi Nagar",
+                            "areaName": "Bachupally",
+                            "costForTwo": "₹250 for two",
+                            "cuisines": [
+                                "South Indian",
+                                "North Indian",
+                                "Chinese"
+                            ],
+                            "avgRating": 4,
+                            "feeDetails": {
+                                "restaurantId": "183710",
+                                "fees": [
+                                    {
+                                        "name": "BASE_DISTANCE",
+                                        "fee": 5300
+                                    },
+                                    {
+                                        "name": "BASE_TIME"
+                                    },
+                                    {
+                                        "name": "ANCILLARY_SURGE_FEE"
+                                    }
+                                ],
+                                "totalFee": 5300
+                            },
+                            "parentId": "19566",
+                            "avgRatingString": "4.0",
+                            "totalRatingsString": "1K+",
+                            "sla": {
+                                "deliveryTime": 31,
+                                "lastMileTravel": 6.6,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "31 mins",
+                                "lastMileTravelString": "6.6 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2023-09-28 23:00:00",
+                                "opened": true
+                            },
+                            "badges": {},
+                            "isOpen": true,
+                            "aggregatedDiscountInfoV2": {},
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "textBased": {},
+                                    "imageBased": {},
+                                    "textExtendedBadges": {}
+                                }
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {}
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=183710&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            }
+        ],
+        "firstOffsetRequest": true,
+        "nextFetch": 3
+    },
+    "tid": "f99b4172-9f41-4b56-b474-a70019f94478",
+    "sid": "9kwb86b9-84a5-4ad2-9c1b-4939a12939f2",
+    "deviceId": "f4c62f55-7cc0-29f0-a051-8970eaa4ed6f",
+    "csrfToken": "BFNB8iwqfK97-_9b20wD-oH7d848uJyowGLZTX_0"
+}
